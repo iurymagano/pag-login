@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(11deg, rgba(2,0,36,1) 0%, rgba(129,37,226,1) 0%, rgba(88,9,225,1) 100%);
+}
+
+main {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 262px;
+    height: 420px;
+    border-radius: 8px;
+}
+
+.box {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.login h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+.bar {
+    width: 25px;
+    height: 4px;
+    background-color: rgba(129,37,226,1);
+    position: absolute;
+    top: 23px;
+    left: 2px;
+    border-radius: 2px;
+    
+
+}
+
+input {
+    border-bottom: 1px solid rgba(129,37,226,1);
+    font-size: 0.9em;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+
+input:focus {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.senha {
+    margin-top: 25px;
+}
+
+.botao {
+    margin-top: 20px;
+}
+
+.botao button[type="submit"] {
+    cursor: pointer;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 0.9em;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 196px;
+    height: 34px;
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(129,37,226,1) 0%, rgba(69,120,229,1) 87%);
+}
+
+.botao button[type="submit"]:hover {
+    background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(69,120,229,1)  0%, rgba(129,37,226,1) 87%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.media{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.media p {
+    color: #696295;
+    font-size: 0.9em;
+}
+
+.media-social  button {
+    height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+.twitter button,
+.facebook button {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+    height: 35px;
+    
+}
+
+.twitter button:hover,
+.facebook button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.twitter button {
+    background-color: #58a6ee;
+}
+
+#logo-twitter {
+    position: absolute;
+    left: 12px;
+    font-size: 15px;
+}
+
+
+.facebook {
+    margin-top: 15px;
+
+}
+
+
+.facebook button {
+    background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(42,61,119,1) 0%, rgba(62,94,192,1) 100%);
+}
+
+#logo-facebook {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    font-size: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+span {
+    position: absolute;
+    right: 19px;
+    top: 10px;
+}
